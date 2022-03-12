@@ -50,6 +50,7 @@ class Dev(Configuration):
         'django.contrib.sessions',
         'django.contrib.messages',
         'django.contrib.staticfiles',
+        'blango_auth',
         'blog',
         'crispy_forms',
         'crispy_bootstrap5',
@@ -192,7 +193,9 @@ class Dev(Configuration):
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
-  ]
+    ]
+
+    AUTH_USER_MODEL = 'blango_auth.User'
 
 class Prod(Dev):
     DEBUG = False

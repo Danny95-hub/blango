@@ -55,6 +55,7 @@ class Dev(Configuration):
         'blog',
         'crispy_forms',
         'crispy_bootstrap5',
+        'rest_framework',
         'debug_toolbar',
         'allauth',
         'allauth.account',
